@@ -39,7 +39,6 @@ int main()
 			break;
 		}
 	}
-	cout << input << endl;
-	cout << cleaned << endl;
+	
 	return 0;
 }

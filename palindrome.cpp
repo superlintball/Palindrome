@@ -40,13 +40,10 @@ int main()
 		}
 	}
 
-	cout << "Cleaned String: " << cleaned << endl;
-	
 	//check if the input is a palindrome by comparing the beginning characters with the end ones
 	bool isPalindrome = true;
 	for(int i = 0; i < count/2; i++)
 	{
-		cout << "Testing " << cleaned[i] << " and " << cleaned[count-1-i] << endl;
 		if(cleaned[i] != cleaned[count - 1 - i])
 		{
 			isPalindrome = false;
@@ -57,11 +54,11 @@ int main()
 	//tell the user if they inputted a palindrome or not
 	if(isPalindrome)
 	{
-		cout << "You entered a palindrome!" << endl;
+		cout << "Palindrome." << endl;
 	}
 	else
 	{
-		cout << "You did not enter a palindrome." << endl;
+		cout << "Not a palindrome." << endl;
 	}
 
 	return 0;
